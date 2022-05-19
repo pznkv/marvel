@@ -1,6 +1,6 @@
 import {lazy, Suspense} from 'react';
 import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
-
+import Logins from '../login/Login';
 import AppHeader from "../appHeader/AppHeader";
 import Spinner from '../spinner/Spinner';
 
@@ -16,6 +16,7 @@ const App = () => {
         <Router>
             <div className="app">
                 <AppHeader/>
+                <Logins/>
                 <main>
                     <Suspense fallback={<Spinner/>}>
                         <Switch>
